@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+<h1 class="header1">
+    Average rainfall in Boston 
+</h1>
+<h2 class="header2">
+    2011 vs 2023
+</h2>
+    <g>
+        <svg class="graph" xmlns="http://www.w3.org/2000/svg">
+            <g class="grid"><line x1="90" x2="90" y1="5" y2="371"></line></g>
+            <g class="grid" > <line x1="90" x2="1440" y1="370" y2="370"></line></g>
+            <g class="labels x-labels">
+                <text x="100" y="400">South End </text>
+                <text x="246" y="400">Roslindale </text>
+                <text x="392" y="400">Dorchester </text>
+                <text x="538" y="400">Allston </text>
+                <text x="684" y="400">Hyde Park</text>
+                <text x="794" y="400">Mattapan </text>
+                <text x="940" y="400">Charlestown  </text>
+                <text x="1086" y="400">Fenway</text>
+                <text x="580" y="440" class="label-title" >Site</text>
+            </g>
+            <g class="labels y-labels">
+                <text x="80" y="15">90</text>
+                <text x="80" y="131">60</text>
+                <text x="80" y="248">30</text>
+                <text x="80" y="373">0</text>
+                <text x="50" y="200" class="label-title">Rainfall(inch)</text>
+            </g>
+            <g class="bars-2023" >
+                <g class="couponcode">
+                    <rect  width="20" height="220.3144444" x="115" y="149.6855556" id="South End" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="237.0466667" x="265" y="132.9533333" id="Roslindale"onmousemove="getRainfall(this)"></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="224.7955556" x="410" y="145.2044444" id="Dorchester"onmousemove="getRainfall(this)"></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="226.9333333" x="550" y="143.0666667" id="Allston" onmousemove="getRainfall(this)"></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="224.1788889" x="705" y="145.8211111" id="Hyde Park" onmousemove="getRainfall(this)"></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="226.7688889" x="810" y="143.2311111" id="Mattapan" onmousemove="getRainfall(this)"></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                <rect width="20" height="204.61" x="960" y="165.39" id="Charlestown"onmousemove="getRainfall(this)" ></rect>
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="227.5911111" x="1100" y="142.4088889" id="Fenway" onmousemove="getRainfall(this)"></rect>
+    
+                        <text class="coupontooltip" x="0" y="50"  "></text>
+                    </g>
+            </g>
+            <g class="bars-2011">
+                <g class="couponcode">
+                    <rect width="20" height="243.748" x="115" y="126.252" id="South End" onmousemove="getRainfall(this)"></rect> 
+
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="229.605" x="265" y="141" id="Roslindale" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"   "></text>
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="230.304" x="410" y="139.69" id="Dorchester" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="249.256" x="550" y="120.74" id="Allston" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"   "></text>
+
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="266.03" x="705" y="103.97" id="Hyde Park" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"   "></text>
+
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="257.191" x="810" y="112.808" id="Mattapan" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"  "></text>
+
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="237.416" x="960" y="132.58" id="Charlestown" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50" "></text>
+
+                </g>
+                <g class="couponcode">
+                    <rect width="20" height="250.65" x="1100" y="119.345" id="Fenway" onmousemove="getRainfall(this)"></rect>
+                    <text class="coupontooltip" x="0" y="50"   "></text>
+
+                </g>
+            </g>
+
+            <g>
+                <rect width="25" height="25" x="90" y="440" style="fill:rgb(0, 89, 255);stroke-width:2;stroke:black" />
+                <text x="140" y="457">2011</text>
+                <rect width="25" height="25" x="90" y="480" style="fill:rgb(116, 165, 255);stroke-width:2;stroke:black" />
+                <text x="140" y="497">2023</text>
+
+
+            </g>
+        </svg>
+        
+        
+        
+
+    </g>
+  
+   
+
+    <script src="script.js"></script>
+
+</body>
+
+
+</html>

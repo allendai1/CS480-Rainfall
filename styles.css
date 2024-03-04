@@ -1,0 +1,88 @@
+body{
+    font-family: "Arial";
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header1 {
+    color: rgb(0, 68, 255);
+}
+.header2 {
+    color: #000000;
+}
+
+
+
+
+.graph{
+    padding-top: 5rem;
+    background-color: rgb(255, 241, 241);
+    height: 35rem;
+    width: 75rem;
+    /* padding-bottom: 5rem; */
+}
+
+.grid {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+  }
+  
+  
+.labels {
+    font-size: 13px;
+    left: 5rem;
+  }
+  
+  .label-title {
+    text-transform: uppercase;
+    font-size: 12px;
+    fill: black;
+    
+    
+  }
+
+  .graph .labels.y-labels {
+    text-anchor: end;
+    writing-mode:vertical-rl;
+
+    
+  }
+
+  .graph .labels.x-labels {
+    text-anchor: start;
+  }
+
+  .graph .grid {
+    stroke: #ccc;
+    stroke-dasharray: 0;
+    stroke-width: 1;
+  }
+  .bars-2011 rect{
+    width: 12px;
+    transform: translateX(-4px);
+    fill: rgb(0, 89, 255);
+  }
+  .bars-2023 rect{
+    width: 12px;
+    transform: translateX(12px);
+    fill: rgb(116, 165, 255);
+    
+  }
+  .couponcode:hover .coupontooltip {
+    display: block;
+}
+
+
+.coupontooltip {
+    display: none;
+    background: #C8C8C8;
+    fill: rgb(0, 0, 0);
+    font-size: 1.7rem;
+    position: absolute;
+    z-index: 10000;
+    
+}
+
